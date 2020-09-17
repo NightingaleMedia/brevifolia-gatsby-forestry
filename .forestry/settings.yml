@@ -9,7 +9,7 @@ sections:
   label: Directory-Test
   create: all
   match: "**/*"
-  new_doc_ext: ".txt"
+  new_doc_ext: txt
 - type: heading
   label: Content
 - type: directory
@@ -38,7 +38,7 @@ use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: public
-  install_dependencies_command: yarn install
+  install_dependencies_command: npm install
   preview_docker_image: node:10
   mount_path: "/srv"
   working_dir: "/srv/public"
